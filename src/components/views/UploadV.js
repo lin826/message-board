@@ -27,7 +27,7 @@ const UploadV = (props) => {
       titleStyle={{ borderBottom: 0 }}
       actionsContainerStyle={{ borderTop: 0 }}
       repositionOnUpdate={false}
-      title="上传照片"
+      title="新增留言"
       actions={actions}
       modal={true}
       open={props.uploadOpen}
@@ -36,19 +36,19 @@ const UploadV = (props) => {
       <Dropzone style={{ border: 'none' }}
         multiple={false}
         onDrop={(photos) => props.selectPhoto(photos)}>
-        <RaisedButton label="选择照片" primary={true} fullWidth={true} />
+        <RaisedButton label="選擇夾帶圖片" primary={true} fullWidth={true} />
       </Dropzone>
       <Divider />
       <TextField
         id="name"
-        hintText="照片名称"
+        hintText="留言標題"
         errorText={props.errorTextName}
         underlineShow={false}
         onChange={(event, value) => props.updatePhoto(event, value)} />
       <Divider />
       <TextField
         id="caption"
-        hintText="照片描述"
+        hintText="內容描述"
         errorText={props.errorTextCaption}
         underlineShow={false}
         multiLine={true}

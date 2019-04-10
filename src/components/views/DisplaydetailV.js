@@ -13,9 +13,9 @@ const DisplaydetailV = (props) => (
       <CardTitle title={props.photo.name} />
       <CardText>{props.photo.caption}</CardText>
       <CardActions style={{ alignSelf: 'flex-end' }}>
-        <FlatButton label="查看评论"
+        <FlatButton label="查看回覆"
           onTouchTap={() => props.clickComments()} />
-        <FlatButton label="获得原图" href={props.photo.url} target="_blank" />
+        {/* <FlatButton label="获得原图" href={props.photo.url} target="_blank" /> */}
       </CardActions>
     </Card>
   </div>

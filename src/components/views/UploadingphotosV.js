@@ -6,7 +6,7 @@ import CloudUploadIcon from 'material-ui/svg-icons/file/cloud-upload'
 
 const UploadingphotosV = (props) => (
   <div>
-    {(props.photoList.length == 0)
+    {/* {(props.photoList.length == 0)
       ?
       <FlatButton
         label="木有照片在"
@@ -31,7 +31,7 @@ const UploadingphotosV = (props) => (
           }
         </Row>
       </Grid>
-    }
+    } */}
   </div>
 )
 

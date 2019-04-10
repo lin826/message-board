@@ -7,21 +7,21 @@ import TextField from 'material-ui/TextField'
 const LoginV = (props) => (
   <Card>
     <CardHeader
-      title="照片分享"
-      subtitle="请使用Chrome"
+      title="Message Board"
+      subtitle="A demo web-based application"
       />
     <CardText>
       <TextField
-        hintText="账号"
-        floatingLabelText="账号"
+        hintText="E-mail"
+        floatingLabelText="E-mail"
         type="text"
         onChange={(event, value) => props.updateRegistration(event, value)}
         id="username"
         errorText={props.errorTextUser}
         /><br />
       <TextField
-        hintText="密码"
-        floatingLabelText="密码"
+        hintText="Password"
+        floatingLabelText="Password"
         type="password"
         onChange={(event, value) => props.updateRegistration(event, value)}
         id="password"
@@ -31,16 +31,16 @@ const LoginV = (props) => (
     <CardActions>
       <FlatButton
         onTouchTap={() => props.onLogin()}
-        label="登录"
+        label="Login"
         />
       <FlatButton
         onTouchTap={() => props.onRegister()}
-        label="注册"
+        label="Create an account"
         />
     </CardActions>
     <CardText>
-      <IconButton iconClassName="fa fa-github" href="https://github.com/nbb3210/react-redux-materialUi-express-mongodb-demo" target="_blank" />
-      <span>nbb3210@gmail.com</span>
+      <IconButton iconClassName="fa fa-github" href="https://github.com/lin826/message-board" target="_blank" />
+      <span>liniju@gapp.nthu.edu.tw</span>
     </CardText>
   </Card>
 )

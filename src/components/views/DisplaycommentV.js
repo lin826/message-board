@@ -9,12 +9,12 @@ import CommentIcon from 'material-ui/svg-icons/communication/comment'
 
 const DisplaycommentV = (props) => (
   <div style={{ flexGrow: 1, height: '100%' }}>
-    <Subheader>评论列表</Subheader>
+    <Subheader>留言回覆</Subheader>
     <List style={{ height: 'calc(100% - 300px)', overflowY: 'auto' }}>
       {(props.comments.length == 0)
         ?
         <FlatButton
-          label="暂无"
+          label="尚無回覆"
           icon={<CommentIcon />}
           disabled={true}
           />
@@ -43,8 +43,8 @@ const DisplaycommentV = (props) => (
     <div style={{ padding: 20 }}>
       <Divider />
       <TextField
-        floatingLabelText="添加评论"
-        hintText="添加评论"
+        floatingLabelText="回覆內容"
+        hintText="回覆內容"
         fullWidth={true}
         underlineShow={true}
         multiLine={true}
@@ -54,8 +54,8 @@ const DisplaycommentV = (props) => (
         value={props.comment}
         errorText={props.errorTextComment} />
       <div>
-        <FlatButton label="发送评论" onTouchTap={() => props.submitComment()} />
-        <FlatButton label="返回简介" onTouchTap={() => props.clickDetail()} />
+        <FlatButton label="張貼" onTouchTap={() => props.submitComment()} />
+        <FlatButton label="返回留言板" onTouchTap={() => props.clickDetail()} />
       </div>
     </div>
   </div>

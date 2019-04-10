@@ -14,13 +14,13 @@ const ToolbarV  = (props) => (
           <DropDownMenu
             value={props.dropDownMenuValue}
             onChange={(event, index, value) => props.changeDropDownMenuValue(event, index, value)}>
-            <MenuItem value={1} primaryText={"朋友的照片"} />
+            <MenuItem value={1} primaryText={"留言板主頁"} />
             <MenuItem value={2} primaryText={props.menuItemTwoText} />
-            <MenuItem value={3} primaryText={"正在上传的照片"} />
+            {/* <MenuItem value={3} primaryText={"正在上传的照片"} /> */}
           </DropDownMenu>
         </ToolbarGroup>
         <ToolbarGroup>
-          <FlatButton
+          {/* <FlatButton
             label={props.flatButtonLabel}
             labelPosition="before"
             primary={true}
@@ -30,9 +30,9 @@ const ToolbarV  = (props) => (
             />
           <ToolbarSeparator />
           <RaisedButton label="上传照片" primary={true}
-            onTouchTap={() => props.clickRasiedButton()} />
+            onTouchTap={() => props.clickRasiedButton()} /> */}
           <IconButton
-            tooltip="离开"
+            tooltip="登出"
             onTouchTap={() => props.leave()}>
             <LeaveIcon />
           </IconButton>

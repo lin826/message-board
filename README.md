@@ -36,5 +36,5 @@ npm start
 Tested in Chrome xx.0 (Desktop,Android) / Opera Developer xx.0 / Firefox xx.0 / Safari xx.0
 
 ## Reference
-https://ithelp.ithome.com.tw/users/20110371/ironman/1616
-https://github.com/nbb3210/react-redux-materialUi-express-mongodb-demo
+* https://ithelp.ithome.com.tw/users/20110371/ironman/1616
+* https://github.com/nbb3210/react-redux-materialUi-express-mongodb-demo

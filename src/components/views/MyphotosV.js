@@ -9,7 +9,7 @@ const MyphotosV = (props) => (
     {(props.photoList.length == 0)
       ?
       <FlatButton
-        label="添加照片"
+        label="張貼留言"
         labelPosition="before"
         icon={<AddPhotoIcon />}
         onTouchTap={() => props.addImg()}
@@ -31,8 +31,8 @@ const MyphotosV = (props) => (
                   <CardTitle title={photo.name} showExpandableButton={true} />
                   <CardText expandable={true}>{photo.caption}</CardText>
                   <CardActions expandable={true}>
-                    <FlatButton label="获得原图" href={photo.url} target="_blank" />
-                    <FlatButton label="删除照片" onTouchTap={props.deletePhoto.bind(this, photo._id)} />
+                    {/* <FlatButton label="获得原图" href={photo.url} target="_blank" /> */}
+                    <FlatButton label="删除" onTouchTap={props.deletePhoto.bind(this, photo._id)} />
                   </CardActions>
                 </Card>
               </Col>
